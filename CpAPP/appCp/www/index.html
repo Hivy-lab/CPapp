@@ -18,9 +18,10 @@
     under the License.
 -->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!--
+
+<head>
+    <meta charset="utf-8">
+    <!--
         Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
             https://cordova.apache.org/docs/en/latest/
         Some notes:
@@ -28,23 +29,55 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+
+    <!-- Plugins -->
+
+    <!-- Jquery -->
+    <script type="text/javascript" src="/CpAPP/appCp/www/plugins/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/CpAPP/appCp/www/plugins/bootstrap-5/css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link href="/CpAPP/appCp/www/plugins/icons-font/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <link href="/CpAPP/appCp/www/plugins/fontawesome/css/all.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Moment JS-->
+    <script src="/CpAPP/appCp/www/plugins/momentjs/moment.js"></script>
+
+    <!-- Moeda -->
+    <script type="text/javascript" src="/CpAPP/appCp/www/plugins/plugins/Moeda/accounting.min.js"></script>
+
+    <!-- Char JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <!-- Select2 -->
+    <link href="/CpAPP/appCp/www/plugins/select2/select2.min.css" rel="stylesheet" type="text/css">
+
+
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>Hello World</title>
+
+</head>
+
+<body>
+    <div class="app">
+        <h1>Apache</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
         </div>
-        <script src="cordova.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
