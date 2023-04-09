@@ -27,3 +27,25 @@ function onDeviceReady() {
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
 }
+
+function loginMain() {
+    const form = document.getElementById('login-form');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); 
+
+        const username = form.username.value;
+        const password = form.password.value;
+
+
+        localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
+
+        if(username, password){
+            console.log("User connected");
+        }else{
+            console.log("User not connected");
+        }
+
+    });
+}
