@@ -1,0 +1,115 @@
+* {
+    background: rgba(192, 255, 217, 0.81);
+    margin: 0;
+}
+
+/*NavBar*/
+.navbar {
+    background: rgba(38, 139, 78, 0.66);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+
+}
+.logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+/*Card Login*/
+.divLogin {
+    display: flex;
+    height: 70%;
+
+
+}
+.boxLogin {
+    border-radius: 0px 0px 20px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgba(38, 139, 78, 0.17);
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 10px 10px -10px black;
+    z-index: 0;
+
+}
+
+/*Image Train*/
+.imageTrain {
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/2378d41b30_50156486_trainautonome-thales-aapsky-adobe-stock.jpg);
+    background-position: center center;
+    background-size: 150%;
+    border-radius: 0px 0px 100px 100px;
+}
+
+/*Login input and label*/
+.Login {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    background-color: transparent;
+}
+.Login a,
+.Login i,
+.Login button,
+.Login label,
+.Login input {
+    margin-top: 10px;
+    color: white;
+    background-color: transparent;
+}
+.Login input{
+    
+    border:none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+}
+.Login input[type="text"]{
+    margin-bottom: 15px;
+}
+
+/*Icons*/
+.far.fa-user, 
+.far.fa-key{
+    margin-right: 10px;
+}
+
+/*Register <a>*/
+.BtnRegis{
+    background-color: transparent;
+}
+.BtnRegis a{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    color: #54A3FF;
+}
+
+.Login .alignButton{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.Login .btnLogin{
+    margin-top: 60px;
+    background:#22DB98 ;
+    border: none;
+    font-size: 20px;
+    width: 65%;
+    height: 50px;
+    border-radius: 15px;
+}
