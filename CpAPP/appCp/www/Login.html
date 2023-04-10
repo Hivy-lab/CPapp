@@ -14,6 +14,24 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./plugins/bootstrap-5/css/bootstrap.min.css">
 
+    <!-- Icons -->
+    <link href="./plugins/icons-font/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <link href="./plugins/fontawesome/css/all.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Moment JS-->
+    <script src="./plugins/momentjs/moment.js"></script>
+
+    <!-- Char JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Select2 -->
+    <link href="./plugins/select2/select2.min.css" rel="stylesheet" type="text/css">
+
+
+    <script src="./plugins/bootstrap-5/js/bootstrap.min.js"></script>
+    <script src="./plugins/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <script src="./plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
 
     <title>Document</title>
 
@@ -24,30 +42,15 @@
 
 <body>
     <!--NavBar-->
-<!--     <div class="navbar">
+    <div class="navbar">
         <img src="./img/logotipo.png" alt="" class="logo">
-    </div> -->
-
-<!--     <nav class="navbar fixed-top navbar-light bg-light">
-        <div class="container-fluid">
-            <img src="./img/logotipo.png" alt="" class="logo">
-        </div>
-      </nav> -->
-
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./img/logotipo.png" alt="" class="logo">
-            </a>
-        </div>
-    </nav>
-
+    </div>
 
     <div class="divLogin">
         <!--imagem do comboio-->
         <div class="boxLogin" id="login-form">
             <div class="imageTrain"></div>
-            <from class="Login">
+            <form class="Login">
                 <label for="user"><i class="far fa-user"></i> Utilizador :</label>
                 <input type="text">
                 <label for="password"><i class="far fa-key"></i>Palavra-Passe :</label>
@@ -59,22 +62,43 @@
                 </div>
 
 
+
                 <div class="BtnRegis">
-                    <a href="#">register</a>
+                    <a href ="#" data-bs-toggle="modal" data-bs-target="#exampleModal">register</a>
                 </div>
 
-            </from>
-
-
-
+            </form>
 
         </div>
 
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="navbar">
+                    <div class="Closemodal">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <img src="./img/logotipo.png" alt="" class="logo">
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <script src="js/index.js"></script>
+    <script type="text/javascript" src="./plugins/select2/select2.min.js"></script>
+
 </body>
 
 </html>

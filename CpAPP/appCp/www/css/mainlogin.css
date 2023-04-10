@@ -1,43 +1,36 @@
 * {
     background: rgba(192, 255, 217, 0.81);
+
+}
+
+body {
+    background: rgba(192, 255, 217, 0.81);
     margin: 0;
+    overflow: hidden;
 }
 
 /*NavBar*/
-.container {
-    margin-top: -10px;
-    margin-bottom: -10px;
+.navbar {
     background: rgba(38, 139, 78, 0.66);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 80px;
-    z-index: 2;
-    
+
+
 
 }
-.navbar.navbar-light.bg-light{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.navbar-brand{
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .logo {
     width: 72px;
     height: 72px;
     border-radius: 25px;
-    z-index: 1;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 /*Card Login*/
@@ -47,6 +40,7 @@
 
 
 }
+
 .boxLogin {
     border-radius: 0px 0px 20px 20px;
     margin-left: 10px;
@@ -56,7 +50,7 @@
     height: 100%;
     box-shadow: 1px 10px 10px -10px black;
     z-index: 0;
-    
+
 
 }
 
@@ -66,7 +60,7 @@
     height: 150px;
     background-image: url(../img/2378d41b30_50156486_trainautonome-thales-aapsky-adobe-stock.jpg);
     background-position: center center;
-    
+
     background-size: 150%;
     border-radius: 0px 0px 100px 100px;
 }
@@ -77,9 +71,10 @@
     flex-direction: column;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 30px;
+    margin-top: 10px;
     background-color: transparent;
 }
+
 .Login a,
 .Login i,
 .Login button,
@@ -89,48 +84,77 @@
     color: white;
     background-color: transparent;
 }
-.Login input{
-    
-    border:none;
+
+.Login input {
+
+    border: none;
     border-radius: 5px;
     padding: 5px;
     font-size: 16px;
     color: black;
     background-color: white;
 }
-.Login input[type="text"]{
+
+.Login input[type="text"] {
     margin-bottom: 15px;
 }
 
 /*Icons*/
-.far.fa-user, 
-.far.fa-key{
+.far.fa-user,
+.far.fa-key {
     margin-right: 10px;
 }
 
 /*Register <a>*/
-.BtnRegis{
+.BtnRegis {
     background-color: transparent;
 }
-.BtnRegis a{
+
+.BtnRegis a {
     display: flex;
     justify-content: center;
     margin-top: 0px;
     color: #54A3FF;
 }
 
-.Login .alignButton{
+.Login .alignButton {
     display: flex;
     justify-content: center;
     background-color: transparent;
 }
 
-.Login .btnLogin{
-    margin-top: 60px;
-    background:#22DB98 ;
+.Login .btnLogin {
+    margin-top: 30px;
+    background: #22DB98;
     border: none;
     font-size: 20px;
     width: 65%;
     height: 50px;
     border-radius: 15px;
+}
+
+
+/*Modal*/
+.modal-content .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    font-size: 24px;
+    background: rgba(38, 139, 78, 0.66);
+}
+
+.modal-content .navbar .Closemodal {
+    color: white;
+    background: transparent;
+    margin-right: 0px;
+}
+
+.modal-content .navbar .Closemodal i {
+    margin-left: 20px;
+    background: transparent;
+}
+
+.modal-content .navbar .logo {
+    margin: auto;
 }
