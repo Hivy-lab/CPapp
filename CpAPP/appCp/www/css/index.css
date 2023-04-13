@@ -1,5 +1,6 @@
 *{
 background: rgba(192, 255, 217, 0.81);
+box-sizing: border-box;
 }
 body {
     background: rgba(192, 255, 217, 0.81);
@@ -18,36 +19,24 @@ body {
     bottom: 5px;
     position: relative;
 }
-.imageTrain {
+.background-image-Home img{
+    border-radius: 100px;
     width: 100%;
-    height: 150px;
-    background-image: url(../img/2378d41b30_50156486_trainautonome-thales-aapsky-adobe-stock.jpg);
-    background-position: center center;
-    display: flex;
+    height: 200px;
     margin-top: 10px;
-    background-size: 150%;
-    border-radius: 100px 100px 100px 100px;
-    position: absolute;
-    opacity: 50%;
+    opacity: 40%;
+    transform: rotate(13deg);
+
+}
+.background-image-Home.col-lg-6 {
     
+    margin-left: 200px;
+}
+.background-image-Home.col-12  {
+
+    margin-left: 0px;
+}
+.blocovendas_disponiveis{
+    margin-top: 20px;
+}
     
-}
-.Container-primario{
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-.Container_Vendas_Disponiveis{
-    width: 50%;
-    height: 100%;
-    margin-top: 300px;
-    display: flex;
-  
-}
-.Container_Vendas{
-    width: 50%;
-    height: 100%;
-    margin-top: 300px;
-    display: flex;
-    background-color: aqua;
-}
