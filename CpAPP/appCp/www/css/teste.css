@@ -1,0 +1,26 @@
+.bodydiv{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+.divbody{
+    width: 100%;
+    background-color: red;
+    margin: 0px 10px 0px 10px;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+}
+body{
+    background-color: aqua;
+}
+.MiniContainer{
+    background-color: greenyellow;
+    width: 100%;
+    height:  70%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+
+}

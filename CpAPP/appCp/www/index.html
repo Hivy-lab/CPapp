@@ -39,27 +39,27 @@
     <!-- Plugins -->
 
     <!-- Jquery -->
-    <script type="text/javascript" src="/CpAPP/appCp/www/plugins/jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./www/plugins/jquery/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="/CpAPP/appCp/www/plugins/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./plugins/bootstrap-5/css/bootstrap.min.css">
 
     <!-- Icons -->
-    <link href="/CpAPP/appCp/www/plugins/icons-font/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
-    <link href="/CpAPP/appCp/www/plugins/fontawesome/css/all.min.css" type="text/css" rel="stylesheet" />
+    <link href="./plugins/icons-font/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <link href="./plugins/fontawesome/css/all.min.css" type="text/css" rel="stylesheet" />
 
     <!-- Moment JS-->
-    <script src="/CpAPP/appCp/www/plugins/momentjs/moment.js"></script>
+    <script src="./plugins/momentjs/moment.js"></script>
 
     <!-- Moeda -->
-    <script type="text/javascript" src="/CpAPP/appCp/www/plugins/plugins/Moeda/accounting.min.js"></script>
+    <script type="text/javascript" src="./plugins/Moeda/accounting.min.js"></script>
 
     <!-- Char JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
     <!-- Select2 -->
-    <link href="/CpAPP/appCp/www/plugins/select2/select2.min.css" rel="stylesheet" type="text/css">
+    <link href="./plugins/select2/select2.min.css" rel="stylesheet" type="text/css">
 
 
 
@@ -69,75 +69,23 @@
 </head>
 
 <body>
-    <!--Background Home-->
-    <div  class="container-fluid text-center Container_Home">
-        <img src="/CpAPP/appCp/www/img/Comboio_Home.jpg">
-        <div class="Maintext_Home "><b>Bem-vindo!</b>
-        <div class="SubText_Home">DEV CP
-        </div> 
-</div>
-</div>
-<!---Contentores dos Blocos venda de bilhetes e comboos disponiveis-->
-<div class="Container_Blocos_Home">
-    <div class="Bloco_Vendas">
-         <div class="text-center col-md-3">
-            <span class="text-center circle"><span>
-                <i class="fa fa-ticket"></i>
-            </span></span> 
+<div class="container">
+    <div class="row">
+        <div class="background-image-Home col-12 col-lg-6">
+           <img src="img/Comboio_Home.jpg">
         </div>
-        <div class="text-center Principal_Text_Bilhetes">200,000<div class="Text_Sub_bilhetes">Venda de <br>Bilhetes</div></div>
-    </div>
-    <div class="Bloco_Comboios"><span class="text-center circle_comboio"><span>
-        <i class="fa fa-regular fa-train" style="color: #ffffff;"></i>
-    </span></span> 
-
-<div class="text-center Principal_Text_comboios">1532<div class="Text_Sub_comboios">Comboios <br>Disponiveis</div></div>
+        <div class="row blocovendas_disponiveis">
+            <div class="col-6 col-lg-6">
+                1 of 3
+            </div>
+            <div class="col-6 col-lg-6">
+                2 of 3
+            </div>
+           
+        </div>
 </div>
-</div>
-
-<div class="Container_Atrasados">
-    <div class="Titulo_Atrasados">Comboios Atrasados</div>
-    <div class="Tabela_Atrasados">
-        <table class="table">
-            <thead>
-                <th style="border-bottom-width:0;"></th>
-                <th style="border-bottom-width:0;"></th>
-                <th style="border-bottom-width:0;" class="text-left"></th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="border-bottom-width:0;" ><span class=" circle_comboio_tabela"><span>
-                        <i class="fa fa-regular fa-train" style="color: #ffffff;"></i>
-                    </span></span> </td>
-                    <td style="border-bottom-width:0;"><div class="Text_Avisos">Comboio:1321</div><div class="Text_Avisos_SubText"><br> razao:A24</div></td>
-                    <td style="border-bottom-width:0;"class="Atraso_Posicao  ">Atraso : <div class="Atraso_subtext">2min</div></td>
-                </tr>
-                <tr>
-                    <td style="border-bottom-width:0;" class="coluna_iconcomboio" ><span class=" circle_comboio_tabela"><span>
-                        <i class="fa fa-regular fa-train" style="color: #ffffff;"></i>
-                    </span></span> </td>
-                    <td style="border-bottom-width:0;"><div class="Text_Avisos">Comboio:1321</div><div class="Text_Avisos_SubText"><br> razao:A24</div></td>
-                    <td style="border-bottom-width:0;"class="Atraso_Posicao  ">Atraso : <div class="Atraso_subtext">2min</div></td>
-                </tr>
-                <tr>
-                    <td style="border-bottom-width:0;" class="coluna_iconcomboio" ><span class=" circle_comboio_tabela"><span>
-                        <i class="fa fa-regular fa-train" style="color: #ffffff;"></i>
-                    </span></span> </td>
-                    <td style="border-bottom-width:0;"><div class="Text_Avisos">Comboio:1321</div><div class="Text_Avisos_SubText"><br> razao:A24</div></td>
-                    <td style="border-bottom-width:0;"class="Atraso_Posicao  ">Atraso : <div class="Atraso_subtext">2min</div></td>
-                </tr>
-                <tr>
-                    <td style="border-bottom-width:0;" class="coluna_iconcomboio" ><span class=" circle_comboio_tabela"><span>
-                        <i class="fa fa-regular fa-train" style="color: #ffffff;"></i>
-                    </span></span> </td>
-                    <td style="border-bottom-width:0;"><div class="Text_Avisos">Comboio:1321</div><div class="Text_Avisos_SubText"><br> razao:A24</div></td>
-                    <td style="border-bottom-width:0;"class="Atraso_Posicao  ">Atraso : <div class="Atraso_subtext">2min</div></td>
-                </tr>
-              
-            </tbody>
-        </table>
-    </div>
-</div>
+   <!--Background Home-->
+    
 
 
     <script src="cordova.js"></script>

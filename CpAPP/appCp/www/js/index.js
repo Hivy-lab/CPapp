@@ -32,7 +32,7 @@ function loginMain() {
     const form = document.getElementById('login-form');
 
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); 
+        event.preventDefault();
 
         const username = form.username.value;
         const password = form.password.value;
@@ -41,11 +41,28 @@ function loginMain() {
         localStorage.setItem('username', username);
         localStorage.setItem('password', password);
 
-        if(username, password){
+        if (username, password) {
             console.log("User connected");
-        }else{
+        } else {
             console.log("User not connected");
         }
 
     });
+}
+
+function test() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        alert("Geolocalização não suportada pelo navegador.");
+    }
+}
+
+
+function showPosition(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    // Faça algo com as coordenadas de latitude e longitude
+    console.log(latitude)
+    console.log(longitude)
 }
