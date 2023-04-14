@@ -192,7 +192,7 @@ h1 {
     position: absolute;
 
     left: 35px;
-    top: 180px;
+    top: 300px;
 
 }
 
@@ -241,22 +241,25 @@ h1 {
 
 /* Container do bloco de venda de bilhetes*/
 .Bloco_Vendas {
+    position: relative;
     background-color: #268b4e52;
-    width: 180px;
+    width: 160px;
     height: 140px;
     border-radius: 20px;
-    left: 200px;
+    right:20px;
+    
 }
 
 /*Container do bloco de bilhetes*/
 .Bloco_Comboios {
     background-color: #268b4e52;
     position: absolute;
-    width: 180px;
+    width: 160px;
     height: 140px;
-    left: 200px;
+    
     top: -0.5px;
     border-radius: 20px;
+    left:163px;
 }
 
 .Principal_Text_Bilhetes {
@@ -327,11 +330,11 @@ h1 {
 .Container_Atrasados {
     position: relative;
     background-color: #268b4e52;
-    width: 380px;
-    height: 170px;
+    width: 350px;
+    height: 300px;
     border-radius: 20px;
-    left: 35px;
-    top: 340px;
+    left:11px;
+    top: 450px;
 }
 
 .Titulo_Atrasados {
@@ -404,7 +407,7 @@ h1 {
 }
 .Atraso_Posicao{
     position: relative;
-    left:201px;
+    left:180px;
     color:white;
 }
 .Atraso_subtext{
